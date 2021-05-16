@@ -1,0 +1,6 @@
+package.json
+gulpfile.js 
+Documentation/
+demo/
+assets/themes/nuda/
+app/config/database.php
