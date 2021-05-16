@@ -1,0 +1,144 @@
+/*!
+|--------------------------------------------------------------------------
+| Main aside
+|
+| Author:       Nudasoft
+| Copyright:    Copyright (C) Nudasoft, all rights reserved
+| Author email: nudasoft@gmail.com
+| Author url:   http://www.nudasoft.com
+|
+| Author twitter:   https://twitter.com/Nudasoft
+| Author facebook:  https://www.facebook.com/Nudasoft
+| Author instagram: https://www.instagram.com/nudasoft
+| Author linkedin:  https://www.linkedin.com/company/nudasoft
+|--------------------------------------------------------------------------
+*/
+
+/*
+ * Id selectors.
+ */
+
+ #aside {
+    flex-basis: 170px;
+}
+
+
+
+#aside a#brand {
+    color: rgba(255,255,255,.3); /* rgba(155,168,179,.5) */
+}
+
+#aside a#brand:hover, #aside a#brand:focus {
+    color: rgba(255,255,255,.4); /* rgba(155,168,179,.75) */
+}
+
+
+
+/* Aside level one nav */
+#aside ul .nav-link,
+#aside ul ._nav_link_append {
+    color: rgba(255,255,255,.5);
+}
+
+#aside ul .nav-link:hover,
+#aside ul .nav-link:focus,
+#aside ul ._nav_link_append:hover,
+#aside ul ._nav_link_append:focus {
+    color: rgba(255,255,255,.75);
+}
+
+#aside ul .nav-link:active,
+#aside ul ._nav_link_append:active {
+    color: #ffffff;
+}
+
+
+#aside ul .nav-item > .nav-link.active,
+#aside ul .nav-item > .active > .nav-link,
+#aside ul .nav-item > .active > ._nav_link_append {
+    background-color: rgba(35,39,43,.5); /* rgb(35,39,43) */
+}
+
+#aside ul .nav-link.active:hover,
+#aside ul .nav-link.active:focus,
+#aside ul .active > .nav-link:hover,
+#aside ul .active > .nav-link:focus,
+#aside ul .active > ._nav_link_append.active:hover,
+#aside ul .active > ._nav_link_append.active:focus {
+    color: rgba(255,255,255,.5);
+}
+
+
+#aside ul .nav-link.disabled,
+#aside ul .nav-link.disabled:hover,
+#aside ul ._nav_link_append.disabled,
+#aside ul ._nav_link_append.disabled:hover {
+    color: rgba(105,112,119,.5); /* #5a6067 */
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+/* Aside level two nav */
+#aside ul ul {
+    background-color: rgba(71,78,84,.5); /* #474e54 */
+    font-size: 90%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+#aside ul ul .nav-link {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+
+#aside ul ul .nav-item > .nav-link.active,
+#aside ul ul .nav-item > .active > .nav-link,
+#aside ul ul .nav-item > .active > ._nav_link_append {
+    background-color: transparent;
+}
+
+#aside ul ul .nav-item > .nav-link.active,
+#aside ul ul .nav-item > .active > .nav-link,
+#aside ul ul .nav-item > .active > ._nav_link_append.active {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+#aside ul ul .nav-link.disabled,
+#aside ul ul .nav-link.disabled:hover,
+#aside ul ul ._nav_link_append.disabled,
+#aside ul ul ._nav_link_append.disabled:hover {
+    color: rgba(132,140,148,.5); /* #747b82 */
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+/* Aside nav item supplementary components */
+#aside ul .dropdown-divider {
+    border-top-color: rgba(80,80,80,.5);
+}
+
+#aside ul ul .dropdown-divider {
+    border-top-color: rgba(90,90,90,.5);
+}
+
+#aside ul .dropdown-divider._transparent {
+    border-top-color: transparent;
+}
+
+
+
+/* Handle sidebar visibility toggle functionality by using BT's collapse component */
+#aside.collapse.show {
+    display: flex !important;
+}
+
+#aside.collapsing {
+    transition: none;
+}

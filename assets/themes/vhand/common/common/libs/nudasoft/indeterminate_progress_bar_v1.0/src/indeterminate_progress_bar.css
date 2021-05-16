@@ -1,0 +1,58 @@
+/*!
+|--------------------------------------------------------------------------
+| Indeterminate progress bar
+|
+| Author:       Nudasoft
+| Copyright:    Copyright (C) Nudasoft, all rights reserved
+| Author email: nudasoft@gmail.com
+| Author url:   http://www.nudasoft.com
+|
+| Author twitter:   https://twitter.com/Nudasoft
+| Author facebook:  https://www.facebook.com/Nudasoft
+| Author instagram: https://www.instagram.com/nudasoft
+| Author linkedin:  https://www.linkedin.com/company/nudasoft
+|--------------------------------------------------------------------------
+*/
+
+.indeterminateProgressBar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 3px;
+    overflow-x: hidden;
+    z-index: 9999;
+}
+
+.line {
+    position: absolute;
+    background: #e0e0e0;
+    opacity: 0.4;
+    width: 150%;
+    height: 3px;
+}
+
+.subline {
+    position: absolute;
+    background: #ffffff;
+    opacity: 0.6;
+    height: 3px;
+}
+
+.inc {
+    animation: increase 2s infinite;
+}
+
+.dec {
+    animation: decrease 2s 0.5s infinite;
+}
+
+@keyframes increase {
+    from { left: -5%; width: 5%; }
+    to { left: 130%; width: 100%;}
+}
+
+@keyframes decrease {
+    from { left: -80%; width: 80%; }
+    to { left: 110%; width: 10%;}
+}

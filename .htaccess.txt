@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# If this app is hosted on root of the host, then there is no need for activate RewriteBase rule.
+# If this app is hosted on a sub directory of the host, then activate RewriteBase rule and put the sub directory path in the //. for example; http://localhost/appskull, http://example.com/appskull -> RewriteBase /appskull/
+# RewriteBase //
+
+RewriteCond %{REQUEST_URI} ^/app.*
+RewriteCond %{REQUEST_URI} ^/sys.*
+RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?/$1 [L]

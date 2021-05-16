@@ -1,0 +1,11 @@
+Check changes in .scss files with this key: //[custom]
+======================================================
+Files:
+------
+_variables.scss
+_type.scss
+_navbar.scss
+_card.scss
+_pagination.scss
+_buttons.scss
+bootstrap.scss
